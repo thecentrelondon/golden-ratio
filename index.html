@@ -1111,7 +1111,7 @@ function showResult(firstName, result) {
   });
 
   resultSection.style.display = 'block';
-  window.scrollTo({ top: 0, behavior: 'smooth' });
+  window.scrollTo({ top: document.getElementById('resultSection').offsetTop - 80, behavior: 'smooth' });
 }
 
 function showError(msg) { errorMsg.textContent = msg; errorMsg.style.display = 'block'; }
